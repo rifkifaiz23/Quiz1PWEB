@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Quiz 1</title>
+</head> 
+<body>
+    <h2 style="margin-left: 50px;">KUIZ 1</h2>
+    <p style="margin-left: 50px;">Nama : Rifki Faiz Azzurananada</p>
+    <p style="margin-left: 50px;">NIM  : 12250113451</p>
+    <img class="profile-image" src="profile-user.png"/>
+
+    <div class="grid-container">
+        <div class="grid-item">
+            <img src="luffy.jpg" />
+            <div>
+                <h2>Luffy</h2>
+                <p>Baka Senchou</p>
+                <div>
+                    <button style="border-radius: 15px; background-color: red;color: black;"class="apply-button">Apply</button>
+                </div>
+            </div>
+        </div>
+        <div class="grid-item">
+            <img src="zoro.jpg"/>
+            <div>
+                <h2>Luffy</h2>
+                <p>Kaizoku Gari</p>
+                <div>
+                    <button style="border-radius: 15px; background-color: green;color: black;" class="apply-button">Apply</button>
+                </div>
+            </div>
+        </div>
+        <div class="grid-item">
+            <img src="sanji.jpg"/>
+            <div>
+                <h2>Luffy</h2>
+                <p>Kokki</p>
+                <div>
+                    <button style="border-radius: 15px; background-color: yellow; color: black;"class="apply-button">Apply</button>
+                </div>
+            </div>
+        </div>
+    </div>    
+
+    <script>
+        const applyButtons = document.querySelectorAll('.apply-button');
+
+        applyButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                const color = this.style.backgroundColor;
+                document.body.style.backgroundColor = color;
+            });
+        });
+    </script>
+</body>
+</html>
